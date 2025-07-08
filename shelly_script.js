@@ -1,13 +1,13 @@
-function button2_single() { 
-  print("Button 2 Single Click"); 
+function button1_single() { 
+  print("Button 1 Single Click"); 
   Shelly.call("RGBW.Toggle", { id: 0 });
   Shelly.call("RGBW.GetStatus", { id: 0 }, function(res) {
     print("Status (vor Toggle):", JSON.stringify(res));
   });
   }
   
-function button2_double() { 
-  print("Button 2 Double Click"); 
+function button1_double() { 
+  print("Button 1 Double Click"); 
     Shelly.call("RGBW.Set", {
     id: 0,
     brightness: 50,
@@ -15,8 +15,8 @@ function button2_double() {
     white: 0
     });
   }
-function button2_triple() { 
-  print("Button 2 Triple Click"); 
+function button1_triple() { 
+  print("Button 1 Triple Click"); 
     Shelly.call("RGBW.Set", {
     id: 0,
     brightness: 100,
@@ -25,8 +25,8 @@ function button2_triple() {
     });
   }
 
-function button2_long()   { 
-  print("Button 2 Long Click"); 
+function button1_long()   { 
+  print("Button 1 Long Click"); 
     Shelly.call("RGBW.Set", {
     id: 0,
     brightness: 100,
@@ -35,10 +35,10 @@ function button2_long()   {
     });
   }
 
-function button1_single() { print("Button 1 Single Click"); }
-function button1_double() { print("Button 1 Double Click"); }
-function button1_triple() { print("Button 1 Triple Click"); }
-function button1_long()   { print("Button 1 Long Click"); }
+function button2_single() { print("Button 2 Single Click"); }
+function button2_double() { print("Button 2 Double Click"); }
+function button2_triple() { print("Button 2 Triple Click"); }
+function button2_long()   { print("Button 2 Long Click"); }
 
 function button3_single() { print("Button 3 Single Click"); }
 function button3_double() { print("Button 3 Double Click"); }
