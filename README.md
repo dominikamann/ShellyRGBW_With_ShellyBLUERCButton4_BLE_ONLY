@@ -1,4 +1,4 @@
-# ShellyRGBW with ShellyBLU RC Button 4 — BLE-Only Local Control
+# ShellyRGBW (and other Shelly Devices) with ShellyBLU RC Button 4 — BLE-Only Local Control
 
 Control your Shelly RGBW device completely locally, without Internet or WiFi, using Bluetooth and a Shelly BLU RC Button 4.
 
